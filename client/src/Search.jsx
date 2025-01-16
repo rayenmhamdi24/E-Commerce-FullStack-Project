@@ -1,7 +1,7 @@
 import React from "react";
 function Search({ pc, search }) {
-  const filteredPc = pfilter((element) =>
-    ement.name.toLowerCase().includes(search.toLowerCase())
+  const filteredPc = pc.filter((element) =>
+    element.name.toLowerCase().includes(search.toLowerCase())
   );
   return (
     <div className="search-container">
